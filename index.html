@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blq Bibliothèque</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Risque&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+</head>
+<body>
+    <h1>BLQ BIBLIOTHÉQUE</h1>
+    <section id="form">
+    <form>
+    <section id="input1">
+        <input type="text" id="Titre" placeholder="Son titre:">
+        <br>
+        <input type="text"  id="Auteur" placeholder="Son auteur:">
+        <br>
+        <input type="tel"  id="Prix" placeholder="Son prix $:"><br>
+    </section>
+    <section id="input2">
+        <input type="date"  id="pub" placeholder="Sa date de publication:"><br>
+    
+
+        <select id="Langue" placeholder="Sa langue" name="languages">
+            <option>select a languages</option>
+            <option value="Arabe">arabe</option>
+            <option value="Français">français</option>
+            <option value="Anglais">anglais</option>
+        </select><br>
+        <h3>Type:</h3>
+        <div id="typeinput" style="display: flex;flex-direction: row; width:30%; height: 40px;">
+            <input  class="radio"type="radio" id="Roman" name="Selectionner" value="Roman" >
+            <label  for="Roman">Roman</label><br>
+            <input  class="radio" type="radio" id="Essai" name="Selectionner" value="Essai">
+            <label  for="Essai">Essai</label><br>
+            <input class="radio" type="radio" id="Bande-Dessinée" name="Selectionner" value="Bande-Dessinée">
+            <label for="Bande-Dessinée">Bande-Dessinée</label>
+         </div>
+    </section>
+    <button type="button" id="btn" onclick="createtable()">ajouter un livre</button>
+    </form>
+    </section>
+    <br><br><br>
+    <section id="table">
+    <table id="tableau">
+<tr>
+        <th>Titre</th>
+        <th>Auteur</th>
+        <th>Prix $</th>
+        <th >Date de publication</th>
+        <th>Langue</th>
+        <th>Type</th>
+        <th>Modifier ou supprimer</th>
+</tr>
+
+    </table>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
